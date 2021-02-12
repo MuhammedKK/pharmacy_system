@@ -1,0 +1,148 @@
+/* General Rules */
+$main-button-color: #008cba;
+:root {
+    --main-color:#008cba;
+    --margin-form:1.8rem;
+    
+}
+body {
+    background-color:#fafafa;
+}
+h2 {
+    margin-top: 2rem;
+    color: var(--main-color);
+    font-size: 2.3rem;
+    font-weight: 500;
+}
+table {
+    margin-top:1.5rem;
+    text-align:center;
+    border:1px solid #eee;
+    th {
+        color:var(--main-color);
+    }
+}
+button {
+    margin-bottom:20px;
+}
+.alert-success {
+    border-radius:3px;
+    margin-top:20px;
+}
+
+/* Buttons */
+.main-btn {
+    background-color: $main-button-color;
+    width: fit-content;
+    padding: 8px 10px;
+    color:#fff;
+    display: inline-block;
+    outline: none;
+    border:none
+}
+
+
+/* Navbar Page */
+
+.navbar {
+    .navbar-brand {
+        font-size: 1.5rem;
+    }
+    .navbar-nav {
+        .nav-item {
+            .nav-link {
+                color: #fff;
+                font-size: 1.1rem;
+                padding-right: 20px;
+            }
+            .dropdown-menu {
+                padding:0;
+                top: 49px;
+                .dropdown-item {
+                    font-size: 1rem;
+                    color: #fff;
+                    transition:all .3s ease-in-out;
+                    padding:1rem;
+                    &:hover {
+                        background-color:var(--main-color);
+                        padding-left:2rem;
+                    }            
+                }
+            }
+        }
+    }
+    form {
+        input {
+            border-radius:3px;
+            padding:5px 15px;
+            direction: rtl;
+        }
+        button {
+            outline: none;
+            border-radius: 3px;
+            padding: 5px 12px;
+        }
+    }
+}
+
+
+/* Start Index Page */
+
+.my-background {
+    background:url("../../imgs/background.jpg");
+    height:calc(100vh - 63px);
+    background-size:cover;
+    background-position:bottom;
+}
+
+// Suppliers Report
+
+
+
+/* End Index Page */
+
+/* Login Form */
+
+.container {
+    h1 {
+        margin-top:15rem;
+        color:var(--main-color);
+        font-weight:bold;
+        margin-bottom: var(--margin-form);
+    }
+    .login-form {
+        width:70%;
+        margin:auto;
+        .input-group {
+            margin-bottom:1rem;
+            .input-group-addon {
+                display: inline-block;
+                background-color: #ddd;
+                padding: 5px 12px;
+            }
+        }
+        .btn-submit {
+            input {
+                background: none;
+                border: none;
+                color: #fff;
+                &:focus {
+                    box-shadow:none;
+                    border:none;
+                }
+            }
+        }
+        .forget-password {
+            float: right;
+        }
+    }
+}
+
+/* Supplier Page */
+.supplier div > label, .items div > label {
+    font-size: 1rem;
+    color: var(--main-color);
+}
+.supplier div > input, .supplier div > select, .items div > input, .items div > select, {
+    border-radius:5px;
+}
